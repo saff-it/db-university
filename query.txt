@@ -15,7 +15,7 @@ WHERE `cfu` > 10
 3. Selezionare tutti gli studenti che hanno più di 30 anni
 SELECT * 
 FROM `students` 
-WHERE YEAR(`date_of_birth`) > 1992
+WHERE YEAR(`date_of_birth`) < 1992
 
 
 
@@ -76,3 +76,6 @@ GROUP BY `exam_id`
 
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
+SELECT COUNT(`name`), `department_id` 
+FROM `degrees` 
+GROUP BY `department_id`
