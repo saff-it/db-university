@@ -11,6 +11,7 @@ SELECT `departments`.`name`, `degrees`.`name`
 FROM `degrees`
 JOIN `departments`
 ON `departments`.`id` = `degrees`.`department_id`
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze' AND `degrees`.`level` = 'magistrale'
 
 
 
